@@ -1,0 +1,117 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<JUCERPROJECT id="WQBwW5" name="SimpleScope" displaySplashScreen="0" reportAppUsage="0"
+              splashScreenColour="Dark" projectType="audioplug" version="1.0.0"
+              bundleIdentifier="com.yourcompany.SimpleScope" includeBinaryInAppConfig="1"
+              buildVST="1" buildVST3="0" buildAU="0" buildAUv3="0" buildRTAS="0"
+              buildAAX="0" buildStandalone="1" enableIAA="0" pluginName="SimpleScope"
+              pluginDesc="SimpleScope" pluginManufacturer="yourcompany" pluginManufacturerCode="Manu"
+              pluginCode="Wqbw" pluginChannelConfigs="" pluginIsSynth="0" pluginWantsMidiIn="0"
+              pluginProducesMidiOut="0" pluginIsMidiEffectPlugin="0" pluginEditorRequiresKeys="0"
+              pluginAUExportPrefix="SimpleScopeAU" pluginRTASCategory="" aaxIdentifier="com.yourcompany.SimpleScope"
+              pluginAAXCategory="AAX_ePlugInCategory_Dynamics" jucerVersion="5.0.1">
+  <MAINGROUP id="p1Z1pw" name="SimpleScope">
+    <GROUP id="{D6A87FFE-05F4-4707-B56F-A3848297EC58}" name="Source">
+      <GROUP id="{CAE0E936-B43A-573D-B952-B79B9A7C9E4D}" name="Images">
+        <GROUP id="{11071EE8-101A-4D5C-6C50-FC6AE1D8766B}" name="Dark">
+          <GROUP id="{6BC953ED-7132-CF21-17A3-15E871B43E97}" name="Background">
+            <FILE id="GucBSh" name="Background_Dark.png" compile="0" resource="1"
+                  file="Source/Images/Dark/Background/Background_Dark.png"/>
+            <FILE id="fuKTvl" name="Glare.png" compile="0" resource="1" file="Source/Images/Dark/Background/Glare.png"/>
+          </GROUP>
+          <GROUP id="{22DA0EF8-8E5B-2F18-85EC-4A063E677A58}" name="Buttons">
+            <FILE id="AZ5fuC" name="Button_FreeRun.png" compile="0" resource="1"
+                  file="Source/Images/Dark/Buttons/Button_FreeRun.png"/>
+            <FILE id="jNbUSU" name="Button_FreeRun_Pressed.png" compile="0" resource="1"
+                  file="Source/Images/Dark/Buttons/Button_FreeRun_Pressed.png"/>
+            <FILE id="rWvfMO" name="Button_SineDown.png" compile="0" resource="1"
+                  file="Source/Images/Dark/Buttons/Button_SineDown.png"/>
+            <FILE id="sIEE69" name="Button_SineDown_Pressed.png" compile="0" resource="1"
+                  file="Source/Images/Dark/Buttons/Button_SineDown_Pressed.png"/>
+            <FILE id="nUp1H7" name="Button_SineUp.png" compile="0" resource="1"
+                  file="Source/Images/Dark/Buttons/Button_SineUp.png"/>
+            <FILE id="URll5j" name="Button_SineUp_Pressed.png" compile="0" resource="1"
+                  file="Source/Images/Dark/Buttons/Button_SineUp_Pressed.png"/>
+            <FILE id="SXyRix" name="Buttons_Container.png" compile="0" resource="1"
+                  file="Source/Images/Dark/Buttons/Buttons_Container.png"/>
+          </GROUP>
+          <GROUP id="{9EDB9254-299B-BB49-FFFF-5E95D9C9702D}" name="Dials">
+            <FILE id="B7vUKM" name="Dial_Background_Decay.png" compile="0" resource="1"
+                  file="Source/Images/Dark/Dials/Dial_Background_Decay.png"/>
+            <FILE id="bJbQsR" name="Dial_Background_Fill.png" compile="0" resource="1"
+                  file="Source/Images/Dark/Dials/Dial_Background_Fill.png"/>
+            <FILE id="aE8wBL" name="Dial_Background_Hue.png" compile="0" resource="1"
+                  file="Source/Images/Dark/Dials/Dial_Background_Hue.png"/>
+            <FILE id="N1Op3N" name="Dial_Background_xZoom.png" compile="0" resource="1"
+                  file="Source/Images/Dark/Dials/Dial_Background_xZoom.png"/>
+            <FILE id="Na52RJ" name="Dial_Background_yZoom.png" compile="0" resource="1"
+                  file="Source/Images/Dark/Dials/Dial_Background_yZoom.png"/>
+            <FILE id="HiskTA" name="Knob_Dark.png" compile="0" resource="1" file="Source/Images/Dark/Dials/Knob_Dark.png"/>
+          </GROUP>
+        </GROUP>
+      </GROUP>
+      <GROUP id="{5367A626-C6D2-FBFA-9A09-F038FBFA3F7F}" name="Oscilloscope">
+        <FILE id="hyF3TB" name="FifoBuffer.h" compile="0" resource="0" file="Source/Oscilloscope/FifoBuffer.h"/>
+        <FILE id="TarDui" name="WaveScope.cpp" compile="1" resource="0" file="Source/Oscilloscope/WaveScope.cpp"/>
+        <FILE id="slZCAs" name="WaveScope.h" compile="0" resource="0" file="Source/Oscilloscope/WaveScope.h"/>
+      </GROUP>
+      <GROUP id="{B5DBB2A2-80D3-D880-2751-A82035109939}" name="Plugin">
+        <FILE id="RlvDIH" name="PluginEditor.cpp" compile="1" resource="0"
+              file="Source/Plugin/PluginEditor.cpp"/>
+        <FILE id="K8S21B" name="PluginEditor.h" compile="0" resource="0" file="Source/Plugin/PluginEditor.h"/>
+        <FILE id="hMo8gG" name="PluginProcessor.cpp" compile="1" resource="0"
+              file="Source/Plugin/PluginProcessor.cpp"/>
+        <FILE id="K35r6G" name="PluginProcessor.h" compile="0" resource="0"
+              file="Source/Plugin/PluginProcessor.h"/>
+      </GROUP>
+      <GROUP id="{C7F91D46-0B67-A203-860E-DB717F1F075C}" name="UI">
+        <FILE id="Zhq9p9" name="CustomKnob.h" compile="0" resource="0" file="Source/UI/CustomKnob.h"/>
+        <FILE id="HND7Bt" name="RadioButtonLogic.h" compile="0" resource="0"
+              file="Source/UI/RadioButtonLogic.h"/>
+      </GROUP>
+    </GROUP>
+  </MAINGROUP>
+  <EXPORTFORMATS>
+    <XCODE_MAC targetFolder="Builds/MacOSX" keepCustomXcodeSchemes="1">
+      <CONFIGURATIONS>
+        <CONFIGURATION name="Debug" isDebug="1" optimisation="1" targetName="SimpleScope"/>
+        <CONFIGURATION name="Release" isDebug="0" optimisation="3" targetName="SimpleScope"/>
+      </CONFIGURATIONS>
+      <MODULEPATHS>
+        <MODULEPATH id="juce_core" path="../../../../Developer/JUCE/modules"/>
+        <MODULEPATH id="juce_events" path="../../../../Developer/JUCE/modules"/>
+        <MODULEPATH id="juce_graphics" path="../../../../Developer/JUCE/modules"/>
+        <MODULEPATH id="juce_data_structures" path="../../../../Developer/JUCE/modules"/>
+        <MODULEPATH id="juce_gui_basics" path="../../../../Developer/JUCE/modules"/>
+        <MODULEPATH id="juce_gui_extra" path="../../../../Developer/JUCE/modules"/>
+        <MODULEPATH id="juce_cryptography" path="../../../../Developer/JUCE/modules"/>
+        <MODULEPATH id="juce_video" path="../../../../Developer/JUCE/modules"/>
+        <MODULEPATH id="juce_opengl" path="../../../../Developer/JUCE/modules"/>
+        <MODULEPATH id="juce_audio_basics" path="../../../../Developer/JUCE/modules"/>
+        <MODULEPATH id="juce_audio_devices" path="../../../../Developer/JUCE/modules"/>
+        <MODULEPATH id="juce_audio_formats" path="../../../../Developer/JUCE/modules"/>
+        <MODULEPATH id="juce_audio_processors" path="../../../../Developer/JUCE/modules"/>
+        <MODULEPATH id="juce_audio_plugin_client" path="../../../../Developer/JUCE/modules"/>
+        <MODULEPATH id="juce_audio_utils" path="../../../../Developer/JUCE/modules"/>
+      </MODULEPATHS>
+    </XCODE_MAC>
+  </EXPORTFORMATS>
+  <MODULES>
+    <MODULE id="juce_audio_basics" showAllCode="1" useLocalCopy="1"/>
+    <MODULE id="juce_audio_devices" showAllCode="1" useLocalCopy="1"/>
+    <MODULE id="juce_audio_formats" showAllCode="1" useLocalCopy="1"/>
+    <MODULE id="juce_audio_plugin_client" showAllCode="1" useLocalCopy="1"/>
+    <MODULE id="juce_audio_processors" showAllCode="1" useLocalCopy="1"/>
+    <MODULE id="juce_audio_utils" showAllCode="1" useLocalCopy="1"/>
+    <MODULE id="juce_core" showAllCode="1" useLocalCopy="1"/>
+    <MODULE id="juce_cryptography" showAllCode="1" useLocalCopy="1"/>
+    <MODULE id="juce_data_structures" showAllCode="1" useLocalCopy="1"/>
+    <MODULE id="juce_events" showAllCode="1" useLocalCopy="1"/>
+    <MODULE id="juce_graphics" showAllCode="1" useLocalCopy="1"/>
+    <MODULE id="juce_gui_basics" showAllCode="1" useLocalCopy="1"/>
+    <MODULE id="juce_gui_extra" showAllCode="1" useLocalCopy="1"/>
+    <MODULE id="juce_opengl" showAllCode="1" useLocalCopy="1"/>
+    <MODULE id="juce_video" showAllCode="1" useLocalCopy="1"/>
+  </MODULES>
+  <JUCEOPTIONS JUCE_QUICKTIME="disabled"/>
+</JUCERPROJECT>
