@@ -24,13 +24,16 @@
   ==============================================================================
 */
 
-#pragma once
+namespace juce
+{
 
 #if JUCE_USE_CDBURNER || DOXYGEN
 
 
 //==============================================================================
 /**
+
+    @tags{Audio}
 */
 class AudioCDBurner     : public ChangeBroadcaster
 {
@@ -167,3 +170,5 @@ private:
 
 
 #endif
+
+} // namespace juce

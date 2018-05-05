@@ -24,7 +24,8 @@
   ==============================================================================
 */
 
-#pragma once
+namespace juce
+{
 
 #if JUCE_USE_CDREADER || DOXYGEN
 
@@ -38,6 +39,8 @@
     within the stream.
 
     @see AudioFormatReader
+
+    @tags{Audio}
 */
 class JUCE_API  AudioCDReader  : public AudioFormatReader
 {
@@ -172,3 +175,5 @@ private:
 };
 
 #endif
+
+} // namespace juce

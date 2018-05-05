@@ -802,8 +802,7 @@ static const unsigned char temp_binary_data_14[] =
 const char* Knob_Dark_png = (const char*) temp_binary_data_14;
 
 
-const char* getNamedResource (const char*, int&) throw();
-const char* getNamedResource (const char* resourceNameUTF8, int& numBytes) throw()
+const char* getNamedResource (const char* resourceNameUTF8, int& numBytes) noexcept
 {
     unsigned int hash = 0;
     if (resourceNameUTF8 != 0)
@@ -831,7 +830,7 @@ const char* getNamedResource (const char* resourceNameUTF8, int& numBytes) throw
     }
 
     numBytes = 0;
-    return 0;
+    return nullptr;
 }
 
 const char* namedResourceList[] =
@@ -852,5 +851,35 @@ const char* namedResourceList[] =
     "Dial_Background_yZoom_png",
     "Knob_Dark_png"
 };
+
+const char* originalFilenames[] =
+{
+    "Background_Dark.png",
+    "Glare.png",
+    "Button_FreeRun.png",
+    "Button_FreeRun_Pressed.png",
+    "Button_SineDown.png",
+    "Button_SineDown_Pressed.png",
+    "Button_SineUp.png",
+    "Button_SineUp_Pressed.png",
+    "Buttons_Container.png",
+    "Dial_Background_Decay.png",
+    "Dial_Background_Fill.png",
+    "Dial_Background_Hue.png",
+    "Dial_Background_xZoom.png",
+    "Dial_Background_yZoom.png",
+    "Knob_Dark.png"
+};
+
+const char* getNamedResourceOriginalFilename (const char* resourceNameUTF8) noexcept
+{
+    for (unsigned int i = 0; i < (sizeof (namedResourceList) / sizeof (namedResourceList[0])); ++i)
+    {
+        if (namedResourceList[i] == resourceNameUTF8)
+            return originalFilenames[i];
+    }
+
+    return nullptr;
+}
 
 }

@@ -4,12 +4,13 @@
               splashScreenColour="Dark" projectType="audioplug" version="1.0.0"
               bundleIdentifier="com.yourcompany.SimpleScope" includeBinaryInAppConfig="1"
               buildVST="1" buildVST3="0" buildAU="0" buildAUv3="0" buildRTAS="0"
-              buildAAX="0" buildStandalone="1" enableIAA="0" pluginName="SimpleScope"
+              buildAAX="0" buildStandalone="0" enableIAA="0" pluginName="SimpleScope"
               pluginDesc="SimpleScope" pluginManufacturer="yourcompany" pluginManufacturerCode="Manu"
               pluginCode="Wqbw" pluginChannelConfigs="" pluginIsSynth="0" pluginWantsMidiIn="0"
               pluginProducesMidiOut="0" pluginIsMidiEffectPlugin="0" pluginEditorRequiresKeys="0"
-              pluginAUExportPrefix="SimpleScopeAU" pluginRTASCategory="" aaxIdentifier="com.yourcompany.SimpleScope"
-              pluginAAXCategory="AAX_ePlugInCategory_Dynamics" jucerVersion="5.0.1">
+              pluginAUExportPrefix="SimpleScopeAU" aaxIdentifier="com.yourcompany.SimpleScope"
+              pluginAAXCategory="2" jucerVersion="5.3.1" pluginFormats="buildVST"
+              maxBinaryFileSize="1048576">
   <MAINGROUP id="p1Z1pw" name="SimpleScope">
     <GROUP id="{D6A87FFE-05F4-4707-B56F-A3848297EC58}" name="Source">
       <GROUP id="{CAE0E936-B43A-573D-B952-B79B9A7C9E4D}" name="Images">
@@ -74,7 +75,8 @@
   <EXPORTFORMATS>
     <XCODE_MAC targetFolder="Builds/MacOSX" keepCustomXcodeSchemes="1">
       <CONFIGURATIONS>
-        <CONFIGURATION name="Debug" isDebug="1" optimisation="1" targetName="SimpleScope"/>
+        <CONFIGURATION name="Debug" isDebug="1" optimisation="1" targetName="SimpleScope"
+                       vstBinaryLocation="vst"/>
         <CONFIGURATION name="Release" isDebug="0" optimisation="3" targetName="SimpleScope"/>
       </CONFIGURATIONS>
       <MODULEPATHS>

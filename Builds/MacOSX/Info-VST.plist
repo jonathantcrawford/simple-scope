@@ -8,7 +8,7 @@
     <key>CFBundleIconFile</key>
     <string></string>
     <key>CFBundleIdentifier</key>
-    <string>$(PRODUCT_BUNDLE_IDENTIFIER)</string>
+    <string>com.yourcompany.SimpleScope</string>
     <key>CFBundleName</key>
     <string>SimpleScope</string>
     <key>CFBundleDisplayName</key>
